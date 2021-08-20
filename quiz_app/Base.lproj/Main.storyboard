@@ -48,6 +48,9 @@
                                                         <state key="normal" title="True">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5l7-AU-vRX"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iy-08-Opk">
                                                         <rect key="frame" x="0.0" y="48" width="45" height="33"/>
@@ -55,6 +58,9 @@
                                                         <state key="normal" title="False">
                                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fG2-cG-fpk"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -89,6 +95,12 @@
                             <constraint firstItem="b67-28-e7k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pI3-m4-QxN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="2Iy-08-Opk" id="Dyu-tO-UWm"/>
+                        <outlet property="progressBar" destination="Xik-yI-6QV" id="uys-CI-jwZ"/>
+                        <outlet property="questionLabel" destination="gYz-fn-hif" id="Wvh-Z5-p0R"/>
+                        <outlet property="trueButton" destination="hyb-0x-nre" id="h1o-d0-zFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
